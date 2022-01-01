@@ -11,13 +11,13 @@ class App extends React.Component{
     super();
     this.state = {
       // Should be the sections with relevant data 
-      personal: {"Name": "", "Phone": "", "Email": "", "Address": ""},
-      education: {
+      "personal": {"Name": "Name", "Phone": "Phone", "Email": "Email", "Address": ""},
+      "education": {
           "Institutions": [ // Can add additional institutions
-            {"Institution": {"Field of Study": "", "Dates Attended": ""}},
+            {"Institution": ["Name of Institution", "Field of Study", "Dates Attended"]},
           ]
       },
-      experience: {
+      "experience": {
         "Companies": [
           {"Company": {"Job Title": "", "Job Description":"", "Dates Employed": ""}},
         ]

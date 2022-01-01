@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    text-decoration: underline;
 }
 
 .btn {
@@ -56,10 +57,12 @@ h1 {
 
 .section {
     background-color: rgb(240, 245, 255);
+    margin-bottom: 30px;
 }
 
 .form {
-    background-color: rgb(233, 245, 250)
+    background-color: rgb(233, 245, 250);
+    width: 50%;
 }
 
 input {

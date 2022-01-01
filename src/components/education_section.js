@@ -6,11 +6,22 @@ import FieldInput from './field-input.js';
 class EducationSection extends React.Component {
     constructor(props) {
         super(props)
+        this.addSchool = this.addSchool.bind(this);
+        this.addWork = this.addWork.bind(this);
+    }
+
+    // Add additional fields for additional experience
+    addSchool() {
+        console.log("ADDING SCHOOl")
+        return this.render()
+    }
+
+    addWork() {
+
     }
 
     render() {
         // Add 'add another school button', one option by default
-        console.log("EDUCATION", this.props.fields)
         const {sections} = this.props.fields
         return(
             <div className="section">
@@ -28,7 +39,7 @@ class EducationSection extends React.Component {
                   }
               )}
               <div className="btnDiv">
-                <button className="btn">Add Another</button>
+                <button className="btn" onClick={this.addSchool}>Add Another</button>
               </div>
               <button className="btn">Submit</button>
             </div>

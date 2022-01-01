@@ -7,7 +7,7 @@ class AddressInput extends React.Component {
 
     render() {
         return(
-        <div className='field-input address'>
+        <div className='field-input address' id={this.props.id}>
             <h3>{this.props.fieldTitle}</h3>
             <input type="text" placeholder="Street Address 1"/>
             <input type="text" placeholder="Street Address 2"/>

@@ -7,7 +7,7 @@ class PhoneInput extends React.Component {
 
     render() {
         return(
-        <div className='field-input'>
+        <div className='field-input' id={this.props.id}>
             <h3>{this.props.fieldTitle}</h3>
             <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"/>
         </div>
